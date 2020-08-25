@@ -1,6 +1,6 @@
 ---
 Resources:
-  dev-skondala-linux:
+  devskondalalinux:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: "ami-223f945a"
