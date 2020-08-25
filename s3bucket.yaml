@@ -6,7 +6,7 @@ Resources:
       ImageId: "ami-223f945a"
       InstanceType: "m5.2xlarge"
       KeyName: "keyPresalesNA_Prod_Demo_2020.pem"
-      SecurityGroupIds: ["sg-1eac0363","sg-b3ac03ce"]
+
       NetworkInterfaces:
         - NetworkInterfaceId: !Ref MyAppNetworkInterface
           DeviceIndex: 0
@@ -14,5 +14,6 @@ Resources:
     Type: AWS::EC2::NetworkInterface
     Properties:
       SubnetId: "subnet-e7f17d81"
+      SecurityGroupIds: ["sg-1eac0363","sg-b3ac03ce"]
 
 
