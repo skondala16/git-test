@@ -6,7 +6,13 @@ Resources:
       ImageId: "ami-223f945a"
       InstanceType: "m5.2xlarge"
       KeyName: "keyPresalesNA_Prod_Demo_2020"
-
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 50
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 50
 
       NetworkInterfaces:
         - NetworkInterfaceId: !Ref MyAppNetworkInterface
