@@ -1,6 +1,13 @@
 ---
 Resources:
-  mycftestbucket:
-    Type: "AWS::S3::Bucket"
+  dev-skondala-linux:
+    Type: AWS::EC2::Instance
     Properties:
-      BucketName: "cldfrmtn-bucket"
+      ImageId: "ami-223f945a"
+      InstanceType: "m5.2xlarge"
+      KeyName: "keyPresalesNA_Prod_Demo_2020.pem"
+      SecurityGroupIds: ["sg-1eac0363","sg-b3ac03ce"]
+      NetworkInterfaces: [
+            SubnetId: "subnet-e7f17d81"
+      ]
+
