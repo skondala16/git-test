@@ -2,4 +2,5 @@
 Resources:
   mycftestbucket:
     Type: "AWS::S3::Bucket"
-    Properties: {}
+    Properties:
+      BucketName: "cldfrmtn-bucket"
