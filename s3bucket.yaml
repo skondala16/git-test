@@ -15,7 +15,7 @@ Resources:
     Type: AWS::EC2::NetworkInterface
     Properties:
       SubnetId: "subnet-e7f17d81"
-      SecurityGroupIds:
+      GroupSet:
         - "sg-1eac0363"
 
 
