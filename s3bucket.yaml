@@ -6,8 +6,7 @@ Resources:
       ImageId: "ami-223f945a"
       InstanceType: "m5.2xlarge"
       KeyName: "keyPresalesNA_Prod_Demo_2020.pem"
-      SecurityGroups:
-        - "sgPresalesNA_Dev_2017_10_vpn_north_america"
+
 
       NetworkInterfaces:
         - NetworkInterfaceId: !Ref MyAppNetworkInterface
@@ -16,6 +15,8 @@ Resources:
     Type: AWS::EC2::NetworkInterface
     Properties:
       SubnetId: "subnet-e7f17d81"
+      SecurityGroupIds:
+        - "sg-1eac0363"
 
 
 
