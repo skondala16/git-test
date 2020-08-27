@@ -5,5 +5,4 @@ ENV APP_VERSION="2020.36" \
     PYTHONUNBUFFERED="1" \
     TZ="Etc/UTC"
 
-CMD ["/second.py"]
 
