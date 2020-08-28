@@ -1,6 +1,6 @@
 FROM ubuntu
-RUN pwd
-ADD /test /home
+RUN ls
+ADD . /home
 RUN python second.py
 
 
