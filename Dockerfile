@@ -1,8 +1,5 @@
 FROM ubuntu
-ADD . /home/ec2-user
+ADD . /home
 RUN python second.py
-
-
-
 
 
